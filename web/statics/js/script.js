@@ -9,7 +9,8 @@ $(document).ready(function(){
             data:pd,
             cache:false,
             success:function(data){
-                alert(data);
+               alert("data");
+               window.location.href = "/user?user="+data;
             },
             error:function(){
                 alert("error!");
